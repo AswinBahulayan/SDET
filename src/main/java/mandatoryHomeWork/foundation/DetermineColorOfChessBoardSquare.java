@@ -18,7 +18,7 @@ public class DetermineColorOfChessBoardSquare {
 
     public boolean squareIsWhite(String coordinates) {
         boolean flag = false;
-        if ((Character.getNumericValue(coordinates.charAt(0)) % 2 == 0 && coordinates.charAt(1) % 2 == 0) || (Character.getNumericValue(coordinates.charAt(0)) % 2 != 0 && coordinates.charAt(1) % 2 != 0)) {
+        if ((Character.getNumericValue(coordinates.charAt(1)) % 2 == 0 && coordinates.charAt(0) % 2 == 0) || (Character.getNumericValue(coordinates.charAt(1)) % 2 != 0 && coordinates.charAt(0) % 2 != 0)) {
             return false;
         } else{
             return true;
