@@ -13,7 +13,7 @@ public class DetermineColorOfChessBoardSquare {
 
     @Test
     public void test1(){
-        Assertions.assertEquals(false,squareIsWhite("1a"));
+        Assertions.assertEquals(false,squareIsWhite("a1"));
     }
 
     public boolean squareIsWhite(String coordinates) {
