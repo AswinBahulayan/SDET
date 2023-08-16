@@ -1,0 +1,92 @@
+package api.pojo;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class FieldsPojo {
+
+    private String statuscategorychangedate;
+    private IssueTypePojo issuetype;
+    private String timespent;
+    private String customfield_10030;
+    private String customfield_10031;
+    private ProjectPojo project;
+    private Customfield_10032Pojo[] customfield_10032;
+    private FixVersionsPojo[] fixVersions;
+    private String customfield_10033;
+    private String aggregatetimespent;
+    private String customfield_10034;
+    private String resolution;
+    private String customfield_10035;
+    private String customfield_10027;
+    private String customfield_10028;
+    private String customfield_10029;
+    private String resolutiondate;
+    private int workratio;
+    private IssueRestrictionPojo issuerestriction;
+    private String lastViewed;
+    private WatchesPojo watches;
+    private String created;
+    private String customfield_10020;
+    private String customfield_10021;
+    private String customfield_10022;
+    private PriorityPojo priority;
+    private String customfield_10023;
+    private String customfield_10024;
+    private String customfield_10025;
+    private LabelsPojo[] labels;
+    private String customfield_10026;
+    private String customfield_10016;
+    private String customfield_10017;
+    private Customfield_10018 customfield_10018;
+    private String customfield_10019;
+    private String aggregatetimeoriginalestimate;
+    private String timeestimate;
+    private VersionsPojo[] versions;
+    private IssueLinkPojo[] issuelinks;
+    private String assignee;
+    private String updated;
+    private StatusPojo status;
+    private ComponentsPojo[] components;
+    private String timeoriginalestimate;
+    private String description;
+    private String customfield_10010;
+    private String customfield_10014;
+    private TimeTrackingPojo timetracking;
+    private String customfield_10015;
+    private String customfield_10005;
+    private String customfield_10006;
+    private String security;
+    private String customfield_10007;
+    private String customfield_10008;
+    private AttachmentPojo[] attachment;
+    private String customfield_10009;
+    private String aggregatetimeestimate;
+    private String summary;
+    private CreatorPojo creator;
+    private SubtasksPojo[] subtasks;
+    private String customfield_10040;
+    private String customfield_10041;
+    private String customfield_10042;
+    private ReporterPojo reporter;
+    private String customfield_10043;
+    private String customfield_10044;
+    private AggregateprogressPojo aggregateprogress;
+    private String customfield_10001;
+    private String customfield_10045;
+    private String customfield_10002;
+    private String customfield_10046;
+    private String customfield_10003;
+    private String customfield_10004;
+    private String customfield_10038;
+    private String customfield_10039;
+    private String environment;
+    private String duedate;
+    private ProgressPojo progress;
+    private VotesPojo votes;
+    private CommentPojo comment;
+    private WorklogPojo worklog;
+
+}
