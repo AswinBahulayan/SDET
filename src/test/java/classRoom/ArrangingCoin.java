@@ -16,11 +16,23 @@ public class ArrangingCoin {
     public void test(){
         Assert.assertEquals(1,arrangeCoins(1));
     }
+
+    @Test
+    public void test1(){
+        Assert.assertEquals(1,arrangeCoins(2));
+    }
+
+    @Test
+    public void test2(){
+        Assert.assertEquals(1,arrangeCoins(10));
+    }
+
     public int arrangeCoins(int n) {
-        int sum=0;
-        for(int i=1;i<n;i++){
-            sum+=i;
-            if(n-sum<0){
+//        int n=25;
+        int sum=0;//o[1]
+        for(int i=1;i<n;i++){//o[n]
+            sum+=i;//o[1]
+            if(n-sum<0){//o[1]
                 return i-1;
             }else if(n==sum){
                 return i;
