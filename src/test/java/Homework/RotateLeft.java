@@ -23,9 +23,14 @@ public class RotateLeft {
     * 7.finally place the value of first index in last index which was stored in a variable previously
     * 8.repeat until the while condition becomes false */
 
-    @Test
+    /*@Test
     public void test(){
         Assert.assertEquals(Arrays.asList(3,4,5,1,2),rotLeft(Arrays.asList(1,2,3,4,5),2));
+    }*/
+
+    @Test
+    public void test1(){
+        Assert.assertArrayEquals(new int[]{3,4,5,1,2},rotLeft(new int[]{1,2,3,4,5},2));
     }
     /*swap=a.get(0)
     *a.set(0,a.get(j))*/
@@ -42,6 +47,40 @@ public class RotateLeft {
                 a.set(a.size()-1,swap);
                 d--;
             }
+
+        return a;
+    }
+
+    /*
+     * 1. input is a list of integer and an integer which denotes
+     * number of times the list need to be rotated
+     * 2. output is a list of integer which is rotated left
+     * TestDate:
+     * i/p:[1,2,3,4,5] 2
+     * o/p:[3,4,5,1,2]
+     * 3.Create a while loop with condition stating the number of rotation is greater than 0
+     * 4.decrement the variable in condition for each iteration
+     * 5.inside the while loop store the value of first element of the array in a variable
+     * 6.iterate the array from 1st index and move it to the previous index
+     * using a variable and increment it in each iteration
+     * 7.finally place the value of first index in last index which was stored in a variable previously
+     * 8.repeat until the while condition becomes false */
+    public static int[] rotLeft(int[] a, int d) {
+        // Write your code here
+        while(d>0){
+            int initialIndex=a[0];
+            int k=0;
+            for (int i = 1; i < a.length; i++) {
+                if(i+1<=a.length-1) {
+                    int swap = a[i];
+                    a[i] = a[i + 1];
+                    a[k] = swap;
+                }
+                k++;
+            }
+            a[a.length-1]=initialIndex;
+            d--;
+        }
 
         return a;
     }
