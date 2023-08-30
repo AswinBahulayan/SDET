@@ -155,11 +155,7 @@ public class SalesForce {
                 }
                 clickElementJs(each);
             }catch(Exception e){
-                clickElementJs(each);
-                if (isElementDisplayed(By.xpath("//a[@title='New Task']"))) {
-                    clickElementJs(By.xpath("//a[@title='New Task']"));
-                    break;
-                }
+
             }
         }
     }
