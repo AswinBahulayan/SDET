@@ -36,7 +36,7 @@ public class SalesForce {
         clickElement(By.id("Login"));
     }
 
-    @Test(priority = 0)
+    @Test(priority = 0,retryAnalyzer = RetryListener.class)
     public void createNewRefund() throws InterruptedException {
         clickElement(By.xpath("//div[@role='navigation']/button"));
         clickElement(By.xpath("//button[@aria-label='View All Applications']"));
@@ -58,7 +58,7 @@ public class SalesForce {
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 1,retryAnalyzer = RetryListener.class)
     public void createNewChart() {
         clickElement(By.xpath("//div[@role='navigation']/button"));
         clickElement(By.xpath("//button[@aria-label='View All Applications']"));
