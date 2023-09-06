@@ -14,7 +14,8 @@ public class DecreasingString {
      2.output is a string
      3.create a an array with length 128
      4.iterate the string and store the count of each character in appropriate index (ASCII value of each character)
-     5.using the count of each chracter stored in array create a temporary string to store the charcters in ascending and descending order until the count of charcter is zero */
+     5.using the count of each chracter stored in array create a temporary string to store the charcters in ascending and descending order until the count of charcter is zero
+     6.time complexity is o[n]*/
     public String sortString(String s) {
         int[] arr = new int[128];
         StringBuilder output = new StringBuilder();
@@ -22,15 +23,15 @@ public class DecreasingString {
             arr[s.charAt(i)]+=1;
         }
         int count = s.length();
-        while (count > 0) {
-            for (int i = 96; i < arr.length; i++) {
+        while (count > 0) {//o[n]
+            for (int i = 96; i < arr.length; i++) {//o[n]
                 if (arr[i] != 0) {
                     output.append((char)i);
                     arr[i]--;
                     count--;
                 }
             }
-            for (int i = arr.length - 1; i > 96; i--) {
+            for (int i = arr.length - 1; i > 96; i--) {//o[n]
                 if (arr[i] != 0) {
                     output.append((char)i);
                     arr[i]--;
