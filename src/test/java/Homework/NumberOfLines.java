@@ -6,6 +6,7 @@ import org.junit.Test;
 public class NumberOfLines {
 
     /**
+     * https://leetcode.com/problems/number-of-lines-to-write-string/description/
      1.input is a array of integer of length 26 and string
      2.output is array of integer
      3.create a temp variable sum to calculate the sum and row to calculate the row

@@ -6,6 +6,7 @@ import org.junit.Test;
 public class BalancedString {
 
     /**
+     * https://leetcode.com/problems/split-a-string-in-balanced-strings/description/
      1.input is a string
      2.output is a an integer
      3.Variable:
