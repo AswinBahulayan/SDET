@@ -6,6 +6,7 @@ import org.junit.Test;
 public class CheckIfNumberHasEqualDigitAndDigitValue {
 
     /**
+     * https://leetcode.com/problems/check-if-number-has-equal-digit-count-and-digit-value/description/
      1.input is string containing only digits
      2.output is boolean
      3.create an integer array of length 10

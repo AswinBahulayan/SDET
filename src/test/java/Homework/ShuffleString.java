@@ -6,6 +6,7 @@ import org.junit.Test;
 public class ShuffleString {
 
     /**
+     * https://leetcode.com/problems/shuffle-string/description/
      1.input is a string and an array of indices
      2.output is a string which is shuffles based on the input array provided
      3.create a char array and and iterate through the string
