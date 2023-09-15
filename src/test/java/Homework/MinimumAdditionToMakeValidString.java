@@ -15,7 +15,8 @@ public class MinimumAdditionToMakeValidString {
     // 6.now check if ab,bc,ac is place consecutively in the array
     // 7.if so make i-1,i to zero and increment count by 1
     // 8.now check for character a , b , c and if character is present increment count by 2
-    // 9.finally return total count.*/
+    // 9.finally return total count.
+    // 10.time complexity is o[n]*/
 
     @Test
     public void test(){
@@ -25,7 +26,7 @@ public class MinimumAdditionToMakeValidString {
     public int addMinimum(String word) {
 //        word=word.replaceAll("abc","");
         char[] a=word.toCharArray();
-        for (int i = 2; i < a.length ; i++) {
+        for (int i = 2; i < a.length ; i++) {//o[n]
             if(a[i-2]=='a' && a[i-1]=='b' && a[i]=='c'){
                 a[i-2]='0';
                 a[i-1]='0';
@@ -35,7 +36,7 @@ public class MinimumAdditionToMakeValidString {
         String[] compare={"ab","bc","ac"};
         char[] compare2={'a','b','c'};
         int count=0;
-        for(int i=1;i<a.length;i++){
+        for(int i=1;i<a.length;i++){//o[n]
             if(a[i-1]==compare[0].charAt(0)
                     && a[i]==compare[0].charAt(1) ){
                 a[i-1]='0';a[i]='0';
@@ -50,7 +51,7 @@ public class MinimumAdditionToMakeValidString {
                 count++;
             }
         }
-        for(int i=0;i<a.length;i++){
+        for(int i=0;i<a.length;i++){//o[n]
             if(a[i]==compare2[0] ){
                 count+=2;
             }else if(a[i]==compare2[1] ){
