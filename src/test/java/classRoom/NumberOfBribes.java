@@ -24,7 +24,8 @@ public class NumberOfBribes {
     * 7.if the above condition is satisfied the increment count by 2 and swap i-2 with i
     * and again swap i-2 with i-1
     * 8.if both the conditions are not satisfied return print Too chaotic
-    * 9.if the loop is complete print the total count*/
+    * 9.if the loop is complete print the total count
+    * 10. time complexity is o[n] */
     public static void minimumBribes(List<Integer> q) {
         // Write your code here//2, 1, 5, 3, 4
         int bribes=0;
