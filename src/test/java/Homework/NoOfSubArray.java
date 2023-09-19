@@ -19,7 +19,8 @@ public class NoOfSubArray {
      5.sum the element at index of window and subtract the element at index of window minus k
      6. increment the window and again repeat step 3
      7. finally repeat count.
-     8.time complexity is */
+     8.time complexity is o[n]
+     9.space complexity is o[1]*/
     public int numOfSubarrays(int[] arr, int k, int threshold) {
         int index=0;//0[1]->space complexity
         int sum=0;
