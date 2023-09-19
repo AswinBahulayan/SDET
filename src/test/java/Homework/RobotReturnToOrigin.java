@@ -15,7 +15,7 @@ public class RobotReturnToOrigin {
         System.out.println(judgeCircle("RRRD"));
     }
 
-    public static boolean judgeCircle(String moves) {
+    public static int judgeCircle(String moves) {
        int leftRight=0;
        int upDown=0;
         int count=0;
@@ -35,6 +35,6 @@ public class RobotReturnToOrigin {
                     break;
             }
         }
-        return leftRight==0 && upDown==0;
+        return (leftRight+upDown)-moves.length();
     }
 }
