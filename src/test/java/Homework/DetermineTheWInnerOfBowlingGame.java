@@ -45,8 +45,8 @@ public class DetermineTheWInnerOfBowlingGame {
 
     public int sumOfPoints(int[] player) {
         int left=0,right=0,sum=0;
-        boolean isFullPoints=false;
-        while(right< player.length){
+        boolean isFullPoints=false;//o[1]-space complexity
+        while(right< player.length){//o[n]-time complexity
             if(isFullPoints){
                 sum+=(2*player[right]);
             }else{
