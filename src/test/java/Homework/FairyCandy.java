@@ -17,6 +17,7 @@ public class FairyCandy {
 
 
     /**
+     * https://leetcode.com/problems/fair-candy-swap/description/
      1.input is a pair of int array of non equal length
      2.output is an int array
      3.Declare variables
