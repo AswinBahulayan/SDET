@@ -13,6 +13,7 @@ public class FindDisappearedNumber {
     }
 
     /**
+     * https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/description/
      1.input is an array of int
      2.output is a list if integer
      3.declare variables

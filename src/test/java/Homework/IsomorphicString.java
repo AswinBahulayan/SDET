@@ -13,6 +13,7 @@ public class IsomorphicString {
     }
 
     /**
+     * https://leetcode.com/problems/isomorphic-strings/submissions/
      * 1.input is two string
      * 2.output is a boolean
      * 3.declare a string variable to determine whether the repetition of each character
