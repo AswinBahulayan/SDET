@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Map;
 
-public class IsomorphicSTring {
+public class IsomorphicString {
 
     @Test
     public void test() {

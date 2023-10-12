@@ -23,6 +23,7 @@ public class Jira extends BaseClass {
                 .when().body(file).post("issue/");
         response.prettyPrint();
         ResponseBody body = response.getBody();
+        System.out.println(body.prettyPrint());
         createIssuePojo= body.as(CreateIssuePojo.class);
         response.then().assertThat().statusCode(201);
         response.then().assertThat().body("id", Matchers.equalTo(String.valueOf(createIssuePojo.getId())));
