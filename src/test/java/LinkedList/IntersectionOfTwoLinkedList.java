@@ -3,7 +3,7 @@ package LinkedList;
 public class IntersectionOfTwoLinkedList {
 
 
-    /**
+    /**https://leetcode.com/problems/intersection-of-two-linked-lists/description/
      1.input is a pair of ListNode with on possible intersection
      2.output is a ListNode
      3.Declare two tem variables for headA and Headb

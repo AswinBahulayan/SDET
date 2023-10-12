@@ -1,7 +1,7 @@
 package LinkedList;
 
 
-/**
+/**https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/
  1.input is a ListNode
  2.output is a int
  3.Declare a StringBuilder to store the value from each ListNode
