@@ -1,4 +1,4 @@
-package classRoom;
+package Homework;
 
 import org.junit.Test;
 
