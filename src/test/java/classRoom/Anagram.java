@@ -31,10 +31,7 @@ public class Anagram {
     public boolean isAnagram(String s,String t){
         Map<Character,Integer> map=null;
         if(s.length()>t.length()){
-           map=getMap(s);
-            for (int i = 0; i < t.length(); i++) {
-                map.remove(t.charAt(i));
-            }
+           return false;
         }else{
             map=getMap(t);
             for (int i = 0; i < s.length(); i++) {

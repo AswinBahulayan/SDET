@@ -31,6 +31,8 @@ public class ReOrderLinkedList {
      8.if value of i is even then set tail.next as list.get(right) and decrement right
      9.if odd then set tail.next as list.get(left) and increment right */
     public void reorderList(ListNode head) {
+        String sentence ="";
+        sentence.replaceAll("\\.", "");
         ListNode temp=head;
         ListNode tail=null;
         List<ListNode> node=new ArrayList<>();

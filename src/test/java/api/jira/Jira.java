@@ -21,6 +21,7 @@ public class Jira extends BaseClass {
         File file = new File("./src/test/resources/createRequest.json");
         Response response = RestAssured.given()
                 .when().body(file).post("issue/");
+        response.then().assertThat().statusCode(200);
         response.prettyPrint();
         ResponseBody body = response.getBody();
         System.out.println(body.prettyPrint());

@@ -1,9 +1,7 @@
 package selenium.practice;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import io.restassured.RestAssured;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
@@ -32,10 +30,18 @@ public class JiraValidation {
         clickElement(By.id("login-submit"));
         setText(By.id("password"), "India@123");
         clickElement(By.id("login-submit"));
+//        driver.switchTo().window(WindowType.WINDOW.toString());
+        driver.switchTo().newWindow(WindowType.WINDOW);
+        driver.switchTo().parentFrame();
+        WebElement element=null;
+        new Actions(driver).dragAndDrop(null,null).perform();
+        String a="";
+
     }
 
     @Test
     public void test(){
+        ChromeDriver driver=new ChromeDriver();
         clickElement(By.xpath("//p[text()='SDET-5']/../.."));
         clickElement(By.id("createGlobalItem"));
         setText(By.xpath("//span[text()='Create issue']/../../../../..//input[@name='summary']"),
