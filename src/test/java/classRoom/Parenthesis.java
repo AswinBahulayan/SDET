@@ -21,7 +21,7 @@ public class Parenthesis {
         System.out.println(isValid("(]"));
     }
 
-    /*public boolean isValid(String s) {
+    public boolean isValid(String s) {
         char[] a=s.toCharArray();
         Stack<Character> stack=new Stack<>();
         for (char e:
@@ -40,5 +40,5 @@ public class Parenthesis {
             }
         }
         return stack.isEmpty();
-    }*/
+    }
 }
