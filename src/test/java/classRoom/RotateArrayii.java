@@ -16,7 +16,7 @@ public class RotateArrayii {
         rotate1(new int[]{1,2,3,4,5,6,7},3);
     }
 
-    public void rotate(int[] nums, int k) {
+   /* public void rotate(int[] nums, int k) {
         int right=0;
         int[] out=new int[nums.length];
         while(k>nums.length){
@@ -31,7 +31,7 @@ public class RotateArrayii {
         }
        // Arrays.copyOf()
         nums=Arrays.copyOf(out,nums.length);
-    }
+    }*/
 
     public void rotate1(int[] nums, int k) {
         if(k>nums.length)k=k%nums.length;
